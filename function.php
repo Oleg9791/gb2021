@@ -26,7 +26,9 @@ function checkCensor($text):array
 {
     preg_match_all("/.*?дурак|микроб|осталоп|идиот.*?/iu", $text, $matches);
     return $matches[0];
+
 }
+
 /**
  * выполняет сохранение введенного сообщения в файл json
  * @param $message
